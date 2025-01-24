@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Project Requirements Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>UI/UX Project Requirements Questionnaire</h1>
+        <form id="questionnaire-form">
+            <section>
+                <h2>Project Overview</h2>
+                <div class="question">
+                    <label for="project-name">Project Name:</label>
+                    <input type="text" id="project-name" required>
+                </div>
+                <div class="question">
+                    <label for="project-description">Brief Project Description:</label>
+                    <textarea id="project-description" rows="4" required></textarea>
+                </div>
+                <div class="question">
+                    <label for="project-goals">What are the primary goals of this project?</label>
+                    <textarea id="project-goals" rows="4" required></textarea>
+                </div>
+            </section>
+
+            <section>
+                <h2>Target Audience</h2>
+                <div class="question">
+                    <label for="target-audience">Who is the target audience for this product?</label>
+                    <textarea id="target-audience" rows="4" required></textarea>
+                </div>
+                <div class="question">
+                    <label for="user-needs">What are the key needs and pain points of your target audience?</label>
+                    <textarea id="user-needs" rows="4" required></textarea>
+                </div>
+                <div class="question">
+                    <label for="user-tech-savviness">How tech-savvy is your target audience? (Beginner, Intermediate, Advanced)</label>
+                    <select id="user-tech-savviness" required>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+            </section>
+
+            <section>
+                <h2>Functional Requirements</h2>
+                <div class="question">
+                    <label for="core-features">What are the core features of this product?</label>
+                    <textarea id="core-features" rows="4" required></textarea>
+                </div>
+                <div class="question">
+                    <label for="user-flows">Describe the main user flows within the product.</label>
+                    <textarea id="user-flows" rows="4" required></textarea>
+                </div>
+                <div class="question">
+                    <label for="critical-tasks">What are the most critical tasks users will perform?</label>
+                    <textarea id="critical-tasks" rows="4" required></textarea>
+                </div>
+            </section>
+
+            <section>
+                <h2>UI/UX Design Preferences</h2>
+                 <div class="question">
+                    <label for="design-style">What is your preferred design style? (e.g., Minimalist, Modern, Classic)</label>
+                    <input type="text" id="design-style" required>
+                </div>
+                <div class="question">
+                    <label for="color-palette">Do you have a preferred color palette?</label>
+                    <input type="text" id="color-palette">
+                </div>
+                <div class="question">
+                    <label for="brand-guidelines">Do you have existing brand guidelines?</label>
+                    <select id="brand-guidelines" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="accessibility-needs">Are there any specific accessibility needs?</label>
+                    <textarea id="accessibility-needs" rows="4"></textarea>
+                </div>
+                <div class="question">
+                    <label for="inspiration">Are there any existing products or websites that you find inspiring?</label>
+                    <textarea id="inspiration" rows="4"></textarea>
+                </div>
+            </section>
+
+            <section>
+                <h2>Technical Considerations</h2>
+                <div class="question">
+                    <label for="platform">What platform(s) will this product be used on? (Web, Mobile, Desktop)</label>
+                    <input type="text" id="platform" required>
+                </div>
+                <div class="question">
+                    <label for="responsive-design">Is responsive design required?</label>
+                    <select id="responsive-design" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="integration-needs">Are there any specific integration needs with other systems?</label>
+                    <textarea id="integration-needs" rows="4"></textarea>
+                </div>
+            </section>
+
+            <button type="button" onclick="saveAnswers()">Save Answers</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
